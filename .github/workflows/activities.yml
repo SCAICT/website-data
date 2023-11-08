@@ -1,9 +1,10 @@
-# GitHub Action to run the script on push to activities.md
 name: Convert Activities to JSON
 on:
   push:
     paths:
       - 'activities.md'
+  # allows to manually run the job at any time
+  workflow_dispatch:
 jobs:
   convert:
     runs-on: ubuntu-latest
