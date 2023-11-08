@@ -2,7 +2,7 @@ name: Convert Events to JSON
 on:
   push:
     paths:
-      - 'activities.md'
+      - 'events.md'
   # allows to manually run the job at any time
   workflow_dispatch:
 jobs:
@@ -21,10 +21,10 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add activities.json
+          git add events.json
           if git diff --staged --quiet; then
-            echo "No changes in activities.json"
+            echo "No changes in events.json"
           else
-            git commit -m "Update activities.json"
+            git commit -m "Update events.json"
             git push
           fi
