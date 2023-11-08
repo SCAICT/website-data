@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'events.md'
+      - 'convert.js'
   # allows to manually run the job at any time
   workflow_dispatch:
 jobs:
