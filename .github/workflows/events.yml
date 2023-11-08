@@ -1,4 +1,4 @@
-name: Convert Activities to JSON
+name: Convert Events to JSON
 on:
   push:
     paths:

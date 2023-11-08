@@ -6,7 +6,7 @@ let activities = [];
 let currentActivity = null;
 
 const rl = readline.createInterface({
-  input: fs.createReadStream('activities.md'),
+  input: fs.createReadStream('events.md'),
   output: process.stdout,
   terminal: false
 });
@@ -30,5 +30,5 @@ rl.on('line', (line) => {
 });
 
 rl.on('close', () => {
-  fs.writeFileSync('activities.json', JSON.stringify({ activities: activities }, null, 2));
+  fs.writeFileSync('events.json', JSON.stringify({ activities: activities }, null, 2));
 });
