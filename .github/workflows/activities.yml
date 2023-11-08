@@ -11,8 +11,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run script
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: node ./convert.js
+      - name: Run script
+        run: node ./convert.js
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add activities.json
+          if git diff --staged --quiet; then
+            echo "No changes in activities.json"
+          else
+            git commit -m "Update activities.json"
+            git push
+          fi
