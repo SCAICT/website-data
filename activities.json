@@ -1,0 +1,18 @@
+{
+  "activities": [
+    {
+      "title": "Activity Name",
+      "description": "2023/10/29",
+      "date": "Taichung",
+      "location": "Free",
+      "price": ""
+    },
+    {
+      "title": "Another Activity Name",
+      "description": "2023/11/25",
+      "date": "Taichung",
+      "location": "Free",
+      "price": ""
+    }
+  ]
+}
