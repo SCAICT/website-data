@@ -1,0 +1,14 @@
+# GitHub Action to run the script on push to activities.md
+name: Convert Activities to JSON
+on:
+  push:
+    paths:
+      - 'activities.md'
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run script
+        run: node convert.js
