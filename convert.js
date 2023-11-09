@@ -23,16 +23,11 @@ rl.on("line", line => {
         activities.push(currentActivity);
     } else if (line.startsWith("*")) {
         const value = line.substring(1).trim();
-        if (!currentActivity.description) {
-            currentActivity.description = value;
-        } else if (!currentActivity.date) {
-            currentActivity.date = value;
-        } else if (!currentActivity.location) {
-            currentActivity.location = value;
-        } else if (!currentActivity.price) {
-            currentActivity.price = value;
-        } else if (!currentActivity.image) {
-            currentActivity.price = value;
+        if (!currentActivity.description) currentActivity.description = value;
+        else if (!currentActivity.date) currentActivity.date = value;
+        else if (!currentActivity.location) currentActivity.location = value;
+        else if (!currentActivity.price) currentActivity.price = value;
+        else if (!currentActivity.image) currentActivity.image = value;
         }
     }
 });
