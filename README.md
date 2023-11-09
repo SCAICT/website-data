@@ -4,10 +4,7 @@
 
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SCAICT/website-data/.github%2Fworkflows%2Fevents.yml?label=公告部屬&style=flat-square) ![Workflow](https://img.shields.io/github/deployments/SCAICT/Website/production?label=前端部屬&style=flat-square) ![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&label=格式化風格)
 
-
 中電會網站資料
-
-
 
 ## 如何添加公告?
 
@@ -44,4 +41,4 @@
 >
 > 圖片可選，請貼上圖片連結。若無圖片可以省略。
 
-活動部屬需要約 30 秒，請耐心等待。
+*活動部屬需要約 30 秒，請耐心等待。*
