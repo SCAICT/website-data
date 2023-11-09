@@ -28,7 +28,6 @@ rl.on("line", line => {
         else if (!currentActivity.location) currentActivity.location = value;
         else if (!currentActivity.price) currentActivity.price = value;
         else if (!currentActivity.image) currentActivity.image = value;
-        }
     }
 });
 
