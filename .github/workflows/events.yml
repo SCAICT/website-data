@@ -22,10 +22,11 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add events.json
+          git add .
           if git diff --staged --quiet; then
-            echo "No changes in events.json"
+            echo "No changes"
           else
-            git commit -m "Update events.json"
-            git push
+            git commit -m "Minify Code"
+            git push origin HEAD:publish
           fi
+
