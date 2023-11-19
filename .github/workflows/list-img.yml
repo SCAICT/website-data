@@ -24,7 +24,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Minify Code"
+            git commit -m "🖼️更新圖片列表"
             git push
           fi
 

@@ -26,7 +26,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Convert Events to JSON"
+            git commit -m "📅更新活動列表"
             git push
           fi
 
