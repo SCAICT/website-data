@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '16'
       - name: Run script
-        run: node ./convert.js
+        run: node ./events.js
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
