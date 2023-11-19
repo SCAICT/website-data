@@ -26,7 +26,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Minify Code"
+            git commit -m "Convert Events to JSON"
             git push origin HEAD:publish
           fi
 
