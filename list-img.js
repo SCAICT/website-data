@@ -5,7 +5,10 @@ const imgFolder = './img';  // Adjust the path accordingly
 const jsonFilePath = 'images.json';
 
 function readFilesInFolder(folderPath) {
-  return fs.readdirSync(folderPath);
+  return fs.readdirSync(folderPath).filter(item => {
+    const itemPath = path.join(folderPath, item);
+    return fs.statSync(itemPath).isDirectory();
+  });
 }
 
 function createJson() {
@@ -14,7 +17,7 @@ function createJson() {
 
   imageFolders.forEach(folder => {
     const folderPath = path.join(imgFolder, folder);
-    const images = readFilesInFolder(folderPath);
+    const images = fs.readdirSync(folderPath);
     imageJson[folder] = images;
   });
 
