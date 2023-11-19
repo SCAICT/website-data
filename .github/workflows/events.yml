@@ -27,6 +27,6 @@ jobs:
             echo "No changes"
           else
             git commit -m "Convert Events to JSON"
-            git push origin HEAD:publish
+            git push
           fi
 
