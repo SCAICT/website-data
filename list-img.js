@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const imgFolder = './img';  // Adjust the path accordingly
+const imgFolder = './img';
 const jsonFilePath = 'images.json';
 
 function readFilesInFolder(folderPath) {
