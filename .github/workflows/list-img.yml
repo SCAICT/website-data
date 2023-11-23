@@ -5,6 +5,7 @@ on:
     push:
         paths:
             - "img/**"
+            - ".github/workflows/list-img.yml"
     workflow_dispatch:
 jobs:
     convert:
