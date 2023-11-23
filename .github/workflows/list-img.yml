@@ -1,30 +1,37 @@
+# @format
+
 name: List Images in JSON
 on:
-  push:
-    paths:
-      - 'img/**'
-  workflow_dispatch:
+    push:
+        paths:
+            - "img/**"
+    workflow_dispatch:
 jobs:
-  convert:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - name: Run script
-        run: node ./list-img.js
-      - name: Commit and push if changed
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          if git diff --staged --quiet; then
-            echo "No changes"
-          else
-            git commit -m "🖼️更新圖片列表"
-            git push
-          fi
+    convert:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 檢出原始碼
+              uses: actions/checkout@v2
+            - name: 設定 Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "20.10.0"
+            - name: 安裝套件
+              run: npm install cwebp
 
+            - name: 轉檔成 WebP
+              run: |
+                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "${1%.*}.webp"' _ {} \;
+            - name: 列出圖片
+              run: node ./list-img.js
+            - name: 提交變更
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add .
+                  if git diff --staged --quiet; then
+                    echo "No changes"
+                  else
+                    git commit -m "🖼️更新圖片列表"
+                    git push
+                  fi
