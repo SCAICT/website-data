@@ -16,8 +16,10 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: "20.10.0"
-            - name: 安裝套件
+            - name: 安裝 cwebp
               run: npm install cwebp
+            - name: 安裝套件
+              run: npm install
 
             - name: 轉檔成 WebP
               run: |
