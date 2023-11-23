@@ -16,28 +16,12 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: "20.10.0"
-            - name: Install cwebp
-              run: sudo apt update && sudo apt install -y webp
-            - name: Run WebP Conversion Script
+            - name: 安裝套件
+              run: sudo apt-get install -y webp
+
+            - name: 轉檔成 WebP
               run: |
-                  chmod +x ./webp-convert-directory.sh
-                  ./webp-convert-directory.sh
-            - name: 列出圖片
-              run: node ./list-img.js
-            - name: 提交變更
-              run: |
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
-                  git add .
-                  if git diff --staged --quiet; then
-                    echo "No changes"
-                  else
-                    git commit -m "🖼️更新圖片列表"
-                    git push
-                  fi
-                  
-                  chmod +x ./webp-convert-directory.sh
-                  ./webp-convert-directory.sh
+                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "${1%.*}.webp"' _ {} \;
             - name: 列出圖片
               run: node ./list-img.js
             - name: 提交變更
