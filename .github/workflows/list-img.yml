@@ -22,7 +22,8 @@ jobs:
 
             - name: 轉檔成 WebP
               run: |
-                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "converted/${1%.*}.webp"' _ {} \;
+                  find img -type d -exec mkdir -p converted/{} \;
+                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "converted/${1%.*}.webp"' _ {} \; \) -exec sh -c 'cwebp -q 50 "$1" -o "converted/${1%.*}.webp"' _ {} \;
             - name: 列出圖片
               run: node ./list-img.js
             - name: 提交變更
