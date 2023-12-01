@@ -10,5 +10,5 @@
 
 ## 你可能想編輯:
 
-* [活動](https://github.com/SCAICT/website-data/edit/main/home.json)
+* [活動](https://github.com/SCAICT/website-data/edit/main/event.json)
 * [首頁公告](https://github.com/SCAICT/website-data/edit/main/home.json)
