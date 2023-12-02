@@ -19,11 +19,13 @@ jobs:
                   node-version: "20.10.0"
             - name: 安裝套件
               run: sudo apt-get install -y webp
-
+            - name: Install ImageMagick
+              run: sudo apt-get install -y imagemagick
             - name: 轉檔成 WebP
               run: |
                   find img -type d -exec mkdir -p converted/{} \;
                   find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "converted/${1%.*}.webp"' _ {} \;
+                  find converted -type f -name '*.webp' -exec sh -c 'convert "$1" -resize x1000 "$1"' _ {} \;
             - name: 列出圖片
               run: node ./list-img.js
             - name: 提交變更
