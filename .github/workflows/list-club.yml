@@ -1,0 +1,27 @@
+name: List Clubs in Text
+on:
+  push:
+    paths:
+      - 'converted/club/**'
+      - ".github/workflows/list-club.yml"
+  workflow_dispatch:
+jobs:
+  convert:
+      runs-on: ubuntu-latest
+      steps:
+          - name: 檢出原始碼
+            uses: actions/checkout@v2
+          - name: 列出社團
+            run: cd converted/club && ls > ../../club.txt
+          - name: 提交變更
+            run: |
+                git config --local user.email "action@github.com"
+                git config --local user.name "GitHub Action"
+                git add .
+                if git diff --staged --quiet; then
+                  echo "No changes"
+                else
+                  git commit -m "👥更新社團列表"
+                  git push
+                fi
+  
