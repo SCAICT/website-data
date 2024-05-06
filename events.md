@@ -1,10 +1,10 @@
-# Discord Bot
+# 基礎動態規劃
 
-* 2月主題課程
-* 播放音樂、自動分發身分組、聊天和執行程式等，任何你想到的功能都可以在 Discord Bot 中實現！想要輕鬆管理好自己的伺服器嗎？來跟我們一起製作這些酷酷且實用的機器人吧！
-* 2/18（日）、2/25（日）晚上 19：30 ~ 21：30
+* 5月主題課程
+* 動態規劃就是將原本複雜的問題，分割成不同的小部分，而這些小部分稱作「子問題」，這些子問題會比原本複雜的問題還要簡單許多，我們會利用這一個個簡單的子問題來解題。不論你是想來提升自己的競程能力，或者是單純想學習動態規劃，歡迎多多報名，一起來學習實用的技術吧！
+* 5/17（五）、5/24（五）晚上 19：00 ~ 21：00
 *   線上（Jitsi）
 *   免費
-*   https://forms.gle/2PtK7cWqQadso3xQ8
+*   https://docs.google.com/forms/d/e/1FAIpQLSc_xsPMYRrCIQWWt38F52dy4UHmVBAtzQBGuIzYsqdDlgxCiw/viewform
 *   https://images.unsplash.com/photo-1525373698358-041e3a460346
 
