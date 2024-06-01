@@ -8,3 +8,12 @@
 *   https://docs.google.com/forms/d/e/1FAIpQLSc_xsPMYRrCIQWWt38F52dy4UHmVBAtzQBGuIzYsqdDlgxCiw/viewform
 *   https://images.unsplash.com/photo-1525373698358-041e3a460346
 
+# 進階動態規劃
+
+* 6月主題課程
+* 這個月，我們推出了動態規劃的進階課程，延續上次學過的知識，再加深加廣。這次的課程包含各式各樣的進階技術，來解決非常複雜的問題。同樣的，這些技術能運用在 APCS、資訊奧林匹亞競賽、學科能力競賽等。然而，涉及這些技術的課程少之又少，所以這次是你學習動態規劃的最佳機會，請好好把握！趕快來報名吧！
+* 6/7（五）、6/14（五）晚上 19：00 ~ 21：00
+*   線上（Jitsi）
+*   免費
+*   https://forms.gle/MNp1QAj7htJjvYXg8
+*   https://images.unsplash.com/photo-1525373698358-041e3a460346
