@@ -17,3 +17,14 @@
 *   免費
 *   https://forms.gle/MNp1QAj7htJjvYXg8
 *   https://images.unsplash.com/photo-1623479322729-28b25c16b011
+
+# 幹部訓練
+
+* 7月活動
+* 暑假一開始不知道要做什麼嗎？來參加中電會一年一度的「幹部訓練」吧！想要加入中電會的同學趕緊把握住這次的機會，充實自己的技能！
+
+* 7/3（三） 、7/4（四） 8：30 ~ 17：00
+*   台中高工 
+*   200 元
+*   https://forms.gle/vQ7CAksYkMELxWpV7 
+*   https://images.unsplash.com/photo-1623479322729-28b25c16b011
