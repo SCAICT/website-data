@@ -17,13 +17,13 @@ jobs:
                   node-version: "20.10.0"
             - name: 安裝套件
               run: |
-                  sudo apt-get install -y webp
-                  sudo apt-get install -y libheif-examples
-            - name: Install ImageMagick
-              run: sudo apt-get install -y imagemagick
+                  sudo apt-get update
+                  sudo apt-get install -y webp libheif-examples imagemagick
+            - name: 列出 HEIC 文件
+              run: find img -type f -name '*.heic'
             - name: 轉檔成 JPG (處理 HEIC)
               run: |
-                  find img -type f -name '*.heic' -exec sh -c 'heif-convert "$1" "${1%.*}.jpg"' _ {} \;
+                  find img -type f -name '*.heic' -exec sh -c 'echo "Converting $1"; heif-convert "$1" "${1%.*}.jpg"' _ {} \;
             - name: 轉檔成 WebP
               run: |
                   find img -type d -exec mkdir -p converted/{} \;
