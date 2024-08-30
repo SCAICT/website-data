@@ -11,26 +11,45 @@ jobs:
         steps:
             - name: 檢出原始碼
               uses: actions/checkout@v2
+
             - name: 設定 Node.js
               uses: actions/setup-node@v2
               with:
                   node-version: "20.10.0"
+
             - name: 安裝套件
               run: |
                   sudo apt-get update
                   sudo apt-get install -y webp libheif-examples imagemagick
+
             - name: 列出 HEIC 文件
               run: find img -type f -name '*.HEIC'
+
             - name: 轉檔成 JPG (處理 HEIC)
               run: |
-                  find img -type f -name '*.HEIC' -exec sh -c 'echo "Converting $1"; heif-convert "$1" "${1%.*}.jpg"' _ {} \;
+                  find img -type f -name '*.HEIC' -exec sh -c '
+                    file="$1"
+                    base_name=$(basename "$file")
+                    converted_file="converted/${base_name%.*}.jpg"
+                    # 替換掉檔名中的冒號
+                    converted_file=$(echo "$converted_file" | sed "s/:/_/g")
+                    heif-convert "$file" "$converted_file"
+                  ' _ {} \;
+
             - name: 轉檔成 WebP
               run: |
                   find img -type d -exec mkdir -p converted/{} \;
-                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c 'cwebp -q 50 "$1" -o "converted/${1%.*}.webp"' _ {} \;
+                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c '
+                    file="$1"
+                    base_name=$(basename "$file")
+                    converted_file="converted/${base_name%.*}.webp"
+                    cwebp -q 50 "$file" -o "$converted_file"
+                  ' _ {} \;
                   find converted -type f -name '*.webp' -exec sh -c 'convert "$1" -resize x1000 "$1"' _ {} \;
+
             - name: 列出圖片
               run: node ./list-img.js
+
             - name: 提交變更
               run: |
                   git config --local user.email "action@github.com"
