@@ -20,10 +20,10 @@ jobs:
                   sudo apt-get update
                   sudo apt-get install -y webp libheif-examples imagemagick
             - name: 列出 HEIC 文件
-              run: find img -type f -name '*.heic'
+              run: find img -type f -name '*.HEIC'
             - name: 轉檔成 JPG (處理 HEIC)
               run: |
-                  find img -type f -name '*.heic' -exec sh -c 'echo "Converting $1"; heif-convert "$1" "${1%.*}.jpg"' _ {} \;
+                  find img -type f -name '*.HEIC' -exec sh -c 'echo "Converting $1"; heif-convert "$1" "${1%.*}.jpg"' _ {} \;
             - name: 轉檔成 WebP
               run: |
                   find img -type d -exec mkdir -p converted/{} \;
