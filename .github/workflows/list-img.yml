@@ -19,34 +19,31 @@ jobs:
 
             - name: 安裝套件
               run: |
-                  sudo apt-get update
                   sudo apt-get install -y webp libheif-examples imagemagick
-
+                  sudo apt-get install -y ffmpeg
             - name: 列出 HEIC 文件
               run: find img -type f -name '*.HEIC'
-
-            - name: 轉檔成 JPG (處理 HEIC)
+            - name: HEIC to JPG
               run: |
-                  find img -type f -name '*.HEIC' -exec sh -c '
-                    file="$1"
-                    base_name=$(basename "$file")
-                    converted_file="converted/${base_name%.*}.jpg"
-                    # 替換掉檔名中的冒號
-                    converted_file=$(echo "$converted_file" | sed "s/:/_/g")
-                    heif-convert "$file" "$converted_file"
-                  ' _ {} \;
-
-            - name: 轉檔成 WebP
+                    find img -type f -name '*.HEIC' -exec sh -c '
+                        output_file="${1%.*}.jpg"
+                        heif-convert "$1" "$output_file"
+                        # 確保轉換成功後刪除原始 HEIC 文件
+                        if [ -f "$output_file" ]; then
+                            rm "$1"
+                        fi
+                    ' _ {} \;
+            - name: 刪除多餘過渡檔案 #heif-convert 有時候會產生一些黑白的輔助圖片，這裡不希望被加進圖庫
+              run: find . -type f \( \( -name "*aux*" -a -name "*apple*" \) -o -name "*depth*" \) -delete
+            - name: JPG 轉檔成 WebP
               run: |
                   find img -type d -exec mkdir -p converted/{} \;
-                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' \) -exec sh -c '
-                    file="$1"
-                    base_name=$(basename "$file")
-                    converted_file="converted/${base_name%.*}.webp"
-                    cwebp -q 50 "$file" -o "$converted_file"
+                  find img -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' -o -name '*.JPEG' \) -exec sh -c '
+                  converted_file="converted/${1%.*}.webp"
+                  echo "@!#$converted_file"
+                  ffmpeg -i "$1" -q 50 "$converted_file"
                   ' _ {} \;
                   find converted -type f -name '*.webp' -exec sh -c 'convert "$1" -resize x1000 "$1"' _ {} \;
-
             - name: 列出圖片
               run: node ./list-img.js
 
@@ -62,3 +59,5 @@ jobs:
                     git commit -m "🖼️更新圖片列表"
                     git push
                   fi
+
+                  
