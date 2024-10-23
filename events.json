@@ -1,44 +1,14 @@
 {
   "activities": [
     {
-      "title": "基礎動態規劃",
-      "subtitle": "5月主題課程",
-      "description": "動態規劃就是將原本複雜的問題，分割成不同的小部分，而這些小部分稱作「子問題」，這些子問題會比原本複雜的問題還要簡單許多，我們會利用這一個個簡單的子問題來解題。不論你是想來提升自己的競程能力，或者是單純想學習動態規劃，歡迎多多報名，一起來學習實用的技術吧！",
-      "date": "5/17（五）、5/24（五）晚上 19：00 ~ 21：00",
-      "location": "線上（Jitsi）",
-      "price": "免費",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSc_xsPMYRrCIQWWt38F52dy4UHmVBAtzQBGuIzYsqdDlgxCiw/viewform",
-      "image": "https://images.unsplash.com/photo-1525373698358-041e3a460346"
-    },
-    {
-      "title": "進階動態規劃",
-      "subtitle": "6月主題課程",
-      "description": "這個月，我們推出了動態規劃的進階課程，延續上次學過的知識，再加深加廣。這次的課程包含各式各樣的進階技術，來解決非常複雜的問題。同樣的，這些技術能運用在 APCS、資訊奧林匹亞競賽、學科能力競賽等。然而，涉及這些技術的課程少之又少，所以這次是你學習動態規劃的最佳機會，請好好把握！趕快來報名吧！",
-      "date": "6/7（五）、6/14（五）晚上 19：00 ~ 21：00",
-      "location": "線上（Jitsi）",
-      "price": "免費",
-      "link": "https://forms.gle/MNp1QAj7htJjvYXg8",
-      "image": "https://images.unsplash.com/photo-1623479322729-28b25c16b011"
-    },
-    {
-      "title": "幹部訓練",
-      "subtitle": "7月活動",
-      "description": "暑假一開始不知道要做什麼嗎？來參加中電會一年一度的「幹部訓練」吧！想要加入中電會的同學趕緊把握住這次的機會，充實自己的技能！",
-      "date": "7/3（三） 、7/4（四） 8：30 ~ 17：00",
-      "location": "台中高工",
-      "price": "200 元",
-      "link": "https://forms.gle/vQ7CAksYkMELxWpV7",
-      "image": "https://images.unsplash.com/photo-1623479322729-28b25c16b011"
-    },
-    {
       "title": "第四屆迎新活動",
-      "subtitle": "11月活動",
+      "subtitle": "11月活動  報名截止：11/1（五）23：59",
       "description": "又來到一年一度中電會的電資社團聯合迎新了！這次的地點同樣在台中高工。透過聯合迎新，可以認識到其他社團，結交各大電神喔！這次的活動課程內容和以往不同，可以學到 hexo 部落格的架設 ! 快來體驗一次吧~",
       "date": "11/9（六）10 : 00 ～ 17 : 00",
       "location": "台中高工",
       "price": "200 元",
       "link": "https://forms.gle/b6hgHCTc5tvFBJyg8",
-      "image": "https://images.unsplash.com/photo-1623479322729-28b25c16b011"
+      "image": "https://images.unsplash.com/photo-1525373698358-041e3a460346"
     }
   ]
 }
