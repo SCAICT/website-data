@@ -28,3 +28,14 @@
 *   200 元
 *   https://forms.gle/vQ7CAksYkMELxWpV7 
 *   https://images.unsplash.com/photo-1623479322729-28b25c16b011
+
+# 第四屆迎新活動
+
+* 11月活動
+* 又來到一年一度中電會的電資社團聯合迎新了！這次的地點同樣在台中高工。透過聯合迎新，可以認識到其他社團，結交各大電神喔！這次的活動課程內容和以往不同，可以學到 hexo 部落格的架設 ! 快來體驗一次吧~
+
+* 11/9（六）10 : 00 ～ 17 : 00
+*   台中高工 
+*   200 元
+*   https://forms.gle/b6hgHCTc5tvFBJyg8
+*   https://images.unsplash.com/photo-1623479322729-28b25c16b011
