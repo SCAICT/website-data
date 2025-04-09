@@ -1,13 +1,13 @@
 {
   "activities": [
     {
-      "title": "十一月主題課程",
-      "subtitle": "11月活動  報名截止：11 / 21（四）23 : 59",
-      "description": "11月主題課程出來囉~PHP ( Hypertext Preprocessor ) 是一種簡單易學的程式語言，專門用來開發網站。你可以用它輕鬆完成投票系統、留言版，或者製作登入系統等各種功能。PHP的語法直觀、簡單。即便你是程式設計的新手，只要有基本邏輯概念，就能快速上手。而且，學會PHP後，你不只可以製作自己的網站，還能動手設計更多有趣的功能。對網頁程式開發有興趣的，一定要來聽聽看哦 ! ( 講師是第四屆的副會長 不來聽嗎👀 )",
-      "date": "11 / 23、11 / 24  19 : 00  ~  21 : 00",
+      "title": "四月主題課程",
+      "subtitle": "4月活動  報名截止：4 / 19（六） 12 : 00",
+      "description": "對動態設計和產品動畫有興趣的同學注意，這次的講師是負責 SITCON 2025 開幕動畫的陳奕呈，課程將從入門的動態設計出發，透過學習 Blender 與 DaVinci Resolve 這兩套強大又免費的軟體，產出一支屬於自己的動畫作品。",
+      "date": "4 / 20（日） 19：00 ~ 21：00",
       "location": "線上 Jitsi",
       "price": "免費",
-      "link": "https://forms.gle/94DdkHH3o5SYdrGC7",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSe8tMM52dUZRpPTRW47n9NVJ_y6KSA9aoeDwTIJY7Ow8QkkPQ/viewform",
       "image": "https://images.unsplash.com/photo-1525373698358-041e3a460346"
     }
   ]
