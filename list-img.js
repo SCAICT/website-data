@@ -4,10 +4,12 @@ const path = require('path');
 const imgFolder = './converted/img';
 const jsonFilePath = 'images.json';
 
+const excludeDirs = ['club']; 
+
 function readFilesInFolder(folderPath) {
   return fs.readdirSync(folderPath).filter(item => {
     const itemPath = path.join(folderPath, item);
-    return fs.statSync(itemPath).isDirectory();
+    return fs.statSync(itemPath).isDirectory() && !excludeDirs.includes(item);
   });
 }
 
