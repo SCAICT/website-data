@@ -47,7 +47,7 @@ jobs:
                   find converted -type f -name '*.webp' -exec sh -c 'convert "$1" -resize x1000 "$1"' _ {} \;
             - name: 移動已轉換的社團圖片到 converted/club (已存在者除外)
               run: |
-                  cp -rvn converted/img/club/* converted/club/
+                  cp -rv --update=none converted/img/club/* converted/club/
                   rm -rv converted/img/club/*
             - name: 列出圖片
               run: node ./list-img.js
