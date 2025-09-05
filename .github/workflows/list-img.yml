@@ -47,8 +47,13 @@ jobs:
                   find converted -type f -name '*.webp' -exec sh -c 'convert "$1" -resize x1000 "$1"' _ {} \;
             - name: 移動已轉換的社團圖片到 converted/club (已存在者除外)
               run: |
-                  cp -rv --update=none converted/img/club/* converted/club/
-                  rm -rv converted/img/club/*
+                  mkdir -p converted/club
+                  if [ -d converted/img/club ] && compgen -G "converted/img/club/*" > /dev/null; then
+                    # Move without overwriting existing files in converted/club
+                    mv -vn converted/img/club/* converted/club/
+                    # Remove any leftovers (same-name files that weren't moved) to keep source empty
+                    rm -f converted/img/club/* || true
+                  fi
             - name: 列出圖片
               run: node ./list-img.js
             - name: 提交變更
