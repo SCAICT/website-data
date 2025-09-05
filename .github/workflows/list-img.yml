@@ -19,6 +19,7 @@ jobs:
 
             - name: 安裝套件
               run: |
+                  sudo apt-get update
                   sudo apt-get install -y webp libheif-examples imagemagick
                   sudo apt-get install -y ffmpeg
             - name: 列出 HEIC 文件
