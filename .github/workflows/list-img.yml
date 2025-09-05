@@ -49,7 +49,7 @@ jobs:
               run: |
                   mkdir -p converted/club
                   if [ -d converted/img/club ] && compgen -G "converted/img/club/*" > /dev/null; then
-                    mv -vn converted/img/club/* converted/club/
+                    cp -rv --update=none converted/img/club/* converted/club/
                     rm -rf converted/img/club/*
                   fi
             - name: 列出圖片
