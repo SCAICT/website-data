@@ -49,10 +49,8 @@ jobs:
               run: |
                   mkdir -p converted/club
                   if [ -d converted/img/club ] && compgen -G "converted/img/club/*" > /dev/null; then
-                    # Move without overwriting existing files in converted/club
                     mv -vn converted/img/club/* converted/club/
-                    # Remove any leftovers (same-name files that weren't moved) to keep source empty
-                    rm -f converted/img/club/* || true
+                    rm -rf converted/img/club/*
                   fi
             - name: 列出圖片
               run: node ./list-img.js
