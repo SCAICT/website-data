@@ -4,6 +4,11 @@ on:
     paths:
       - 'converted/club/**'
       - ".github/workflows/list-club.yml"
+  workflow_run:
+    workflows:
+      - "List Images in JSON"
+    types:
+      - completed
   workflow_dispatch:
 jobs:
   convert:
