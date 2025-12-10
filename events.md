@@ -1,10 +1,17 @@
-# 四月主題課程
+# 一月主題課程
 
-* 4月活動  報名截止：4 / 19（六） 12 : 00
-* 對動態設計和產品動畫有興趣的同學注意，這次的講師是負責 SITCON 2025 開幕動畫的陳奕呈，課程將從入門的動態設計出發，透過學習 Blender 與 DaVinci Resolve 這兩套強大又免費的軟體，產出一支屬於自己的動畫作品。
+* 1月活動　報名截止：1 / 3（六）12 : 00  
+* 想親手體驗駭客如何看待網站與系統嗎？今年的 AIS3 合作課程強勢回歸！一連兩天從 Web 常見漏洞到 Binary Exploitation，帶你從基礎概念到實作演練，一步步深入資安的核心。
 
-* 4 / 20（日） 19：00 ~ 21：00
-*   線上 Jitsi  
-*   免費
-*   https://docs.google.com/forms/d/e/1FAIpQLSe8tMM52dUZRpPTRW47n9NVJ_y6KSA9aoeDwTIJY7Ow8QkkPQ/viewform
-*   https://images.unsplash.com/photo-1525373698358-041e3a460346
+* 1 / 3（六）10：00 ~ 16：00
+*   台中高工　
+*   免費  
+*   https://forms.gle/Cg3itW4tdbTBHK7X7
+*   https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8ffb90a2f64bacfa/6776f4544b281ca5e2bc465a/cybersecurity_NicoElNino-AlamyStockPhoto.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale
+
+
+* 1 / 4（日）10：00 ~ 16：00
+*   台中高工　
+*   免費  
+*   https://forms.gle/Cg3itW4tdbTBHK7X7
+*   https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8ffb90a2f64bacfa/6776f4544b281ca5e2bc465a/cybersecurity_NicoElNino-AlamyStockPhoto.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale
