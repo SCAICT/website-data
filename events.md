@@ -7,4 +7,4 @@
 *   台中高工　
 *   免費  
 *   https://scist.camp
-*   /img/聯合寒訓.png
+*   ![聯合寒訓](img/聯合寒訓.png)
