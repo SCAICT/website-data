@@ -29,4 +29,4 @@
 *   國立中興大學
 *   詳細費用見官網
 *   https://sc.scaict.org
-*   /img/sc.png
+*   https://blog.itousouta15.tw/images/sc.webp
