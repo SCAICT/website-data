@@ -29,4 +29,4 @@
 *   烏日集思會議中心
 *   免費
 *   https://forms.gle/N29ibGUj2bisyH4e7
-*   https://scontent.frmq9-1.fna.fbcdn.net/v/t39.30808-6/776714802_1499171375561495_8357771776065648261_n.jpg?stp=dst-jpg_tt6&cstp=mx1240x1748&ctp=s1240x1748&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mozKMNt_3XEQ7kNvwEF7K6H&_nc_oc=AdpVnEZRP64nR7FV51r0YlKco5jCO6-sJLM5box_yTbSDyJ2eWW8TYCMkXXGStUqlEr0MlUdlav-MCs3hHHt0sgI&_nc_zt=23&_nc_ht=scontent.frmq9-1.fna&_nc_gid=9jY_iiYtoRQX_SKGxTyX_g&_nc_ss=7b289&oh=00_AQFKnSmP2Ds6Y_qkQW_b9nFPGylsK7mJVf7TMTkBICdIcg&oe=6A923905
+*   https://scaict.org/src/img/ais3club.webp
